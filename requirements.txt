@@ -1,0 +1,9 @@
+# Environment or requirements
+fastapi
+uvicorn
+pillow
+numpy
+torch
+transformers
+pydantic
+tensorflow
