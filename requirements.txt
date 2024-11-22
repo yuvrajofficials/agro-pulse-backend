@@ -1,11 +1,10 @@
-# Environment or requirements
 fastapi
 uvicorn
-pillow
-numpy
-torch
-transformers
-pydantic
 tensorflow
+numpy
+pillow
+pydantic
 pandas
 scikit-learn
+python-multipart
+prometheus-fastapi-instrumentator

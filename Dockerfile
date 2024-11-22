@@ -1,29 +1,37 @@
-# Use an official Python runtime as the base image
-FROM python:3.9-slim
+FROM python:3.11-slim
 
-# Set environment variables to prevent Python from writing .pyc files and to buffer output
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements file and install dependencies
+# Install system-level dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev \
+    libffi-dev \
+    python3-dev \
+    libopenblas-dev \
+    liblapack-dev \
+    gfortran \
+    libjpeg-dev \
+    zlib1g-dev && \
+    apt-get clean
+
+# Upgrade pip
+RUN pip install --upgrade pip
+
+# Copy requirements.txt to the container
 COPY requirements.txt /app/requirements.txt
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    && pip install --no-cache-dir --upgrade pip \
-    && pip install --no-cache-dir -r /app/requirements.txt \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Install dependencies
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
-# Copy the entire project into the working directory
-COPY . /app/
+# Copy the rest of the project
+COPY . /app
 
-# Expose the application port (if running a FastAPI/Flask app)
+# Expose port for FastAPI
 EXPOSE 8000
 
-# Specify the command to run your application
-CMD ["python", "main.py"]
+# CMD to run the FastAPI app
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

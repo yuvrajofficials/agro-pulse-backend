@@ -1,0 +1,47 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+  workflow_dispatch:  # Allow manual triggering of the workflow
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository code
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # Step 2: Configure AWS CLI
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v3
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1  # Adjust as per your region
+
+    # Step 3: Download the model from S3
+    - name: Download Model from S3
+      run: |
+        cd models/final
+        aws s3 cp s3://agro-pulse/models/wheat_leaf_nn_model.h5 .
+
+    # Step 4: Log in to Docker Hub
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    # Step 5: Build the Docker image
+    - name: Build Docker Image
+      run: |
+        docker build -t your-dockerhub-username/your-image-name:latest .
+
+    # Step 6: Push the Docker image to Docker Hub
+    - name: Push Docker Image
+      run: |
+        docker push your-dockerhub-username/your-image-name:latest
