@@ -138,7 +138,8 @@ venv.bak/
 
 #models
 models/
-
+terraform/*
+ansible/*
 # Rope project settings
 .ropeproject
 

@@ -8,3 +8,4 @@ pandas
 scikit-learn
 python-multipart
 prometheus-fastapi-instrumentator
+structlog

@@ -1,0 +1,7 @@
+Outputs:
+
+asg_name = "terraform-20241125102306309000000002"
+autoscaling_group_name = "terraform-20241125102306309000000002"
+web_server_instance_id = "i-01ac2cde51bf175be"
+web_server_private_ip = "10.0.1.50"
+web_server_public_ip = "3.88.88.249"
