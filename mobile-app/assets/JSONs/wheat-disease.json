@@ -1,0 +1,100 @@
+{
+    "wheatDiseases": [
+      {
+        "id":1,
+        "name": "Wheat Leaf Rust",
+        "image": "https://extensionaus.com.au/FieldCropDiseasesVic/wp-content/uploads/sites/25/2017/03/Figure-2.7-Leaf-rust-symptoms--e1591751762222.jpg",
+        "foundIn": "Global, common in warm and humid regions",
+        "seasons": "Spring and early summer",
+        "pathogen": "Puccinia triticina",
+        "symptoms": [
+          "Small, circular, orange to brown pustules on leaves",
+          "Pustules may merge, causing extensive leaf damage",
+          "Reduced photosynthesis leading to lower yields"
+        ],
+        "prevention": [
+          "Use resistant wheat varieties",
+          "Apply fungicides during early stages of infection",
+          "Crop rotation to break pathogen cycle"
+        ],
+        "description": "Wheat Leaf Rust is a fungal disease that significantly reduces wheat yield. It thrives in warm, moist environments and spreads quickly under favorable conditions."
+      },
+      {
+        "id":2,
+        "name": "Wheat Loose Smut",
+        "image": "https://bugwoodcloud.org/images/1536x1024/5410690.jpg",
+        "foundIn": "Global, prevalent in temperate regions",
+        "seasons": "Spring and summer",
+        "pathogen": "Ustilago tritici",
+        "symptoms": [
+          "Black, powdery masses replacing the grain in the wheat head",
+          "Stunted plant growth",
+          "Reduced seed production"
+        ],
+        "prevention": [
+          "Use certified smut-free seeds",
+          "Treat seeds with fungicides before planting",
+          "Practice crop rotation"
+        ],
+        "description": "Wheat Loose Smut is a seed-borne fungal disease. It infects the wheat plant during flowering and produces dark spore masses in place of grains."
+      },
+      {
+        "id":3,
+        "name": "Wheat Powdery Mildew",
+        "image": "https://as1.ftcdn.net/v2/jpg/01/39/17/78/1000_F_139177880_2wjHintGHUjdIk5O2Agl8JSTYX523Pkv.jpg",
+        "foundIn": "Global, especially in cooler climates",
+        "seasons": "Spring and fall",
+        "pathogen": "Blumeria graminis f. sp. tritici",
+        "symptoms": [
+          "White, powdery fungal growth on leaves, stems, and heads",
+          "Leaf curling and yellowing",
+          "Reduced grain quality and yield"
+        ],
+        "prevention": [
+          "Plant resistant wheat varieties",
+          "Avoid excessive nitrogen fertilization",
+          "Apply fungicides at the first sign of infection"
+        ],
+        "description": "Wheat Powdery Mildew is a common fungal disease affecting wheat foliage and stems. It thrives in cool, humid conditions."
+      },
+      {
+        "id":4,
+        "name": "Wheat Septoria Leaf Blotch",
+        "image": "https://extensionaus.com.au/FieldCropDiseasesVic/wp-content/uploads/sites/25/2017/03/Figure-2.18-Septoria-tritici-blotch-death-old-leaves.jpg",
+        "foundIn": "Worldwide, common in humid regions",
+        "seasons": "Spring and early summer",
+        "pathogen": "Zymoseptoria tritici",
+        "symptoms": [
+          "Irregular brown lesions with yellow halos on leaves",
+          "Small black fruiting bodies within lesions",
+          "Premature leaf drop"
+        ],
+        "prevention": [
+          "Use resistant wheat varieties",
+          "Rotate crops to prevent pathogen buildup",
+          "Apply fungicides during critical growth stages"
+        ],
+        "description": "Wheat Septoria Leaf Blotch is a foliar disease that causes significant yield losses. It spreads via rain splash and thrives in wet conditions."
+      },
+      {
+        "id":5,
+        "name": "Fusarium Head Blight (FHB)",
+        "image": "https://th.bing.com/th/id/R.e51c40e9b5e55bae05911d7381337474?rik=7Ux77DEPk7uBvQ&riu=http%3a%2f%2fbadgercropdoc.com%2ffiles%2f2013%2f06%2fFHB-2-033.jpg&ehk=YFttfW5SIwkyVZp3V7yBVexqt3MuTb4MYMq3uU7k9Es%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+        "foundIn": "Global, especially in wet and warm climates",
+        "seasons": "Late spring to early summer",
+        "pathogen": "Fusarium graminearum",
+        "symptoms": [
+          "Bleached spikelets with pink or orange fungal growth",
+          "Shriveled, low-quality grains",
+          "Toxin contamination (e.g., deoxynivalenol)"
+        ],
+        "prevention": [
+          "Plant resistant varieties",
+          "Apply fungicides during flowering",
+          "Avoid planting wheat in fields with maize residue"
+        ],
+        "description": "Fusarium Head Blight is a devastating disease of wheat, affecting grain quality and safety due to mycotoxin contamination."
+      }
+    ]
+  }
+  

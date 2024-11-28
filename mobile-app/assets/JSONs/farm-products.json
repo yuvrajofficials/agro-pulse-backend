@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Organic Tomatoes",
+    "price": 3.99,
+    "image": "https://th.bing.com/th/id/OIP.M9PZBaSDfbyAqTbegTXoyQHaE7?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 2,
+    "name": "Fresh Avocados",
+    "price": 2.49,
+    "image": "https://th.bing.com/th/id/OIP.UCdA_-HgHj28hVyjh1nX4AHaE8?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 3,
+    "name": "Farm-Fresh Carrots",
+    "price": 1.99,
+    "image": "https://foodsmartcolorado.colostate.edu/wp-content/uploads/2020/03/Colorado-Carrots-3-1024x685.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Organic Apples",
+    "price": 4.5,
+    "image": "https://media.post.rvohealth.io/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg"
+  }
+]
